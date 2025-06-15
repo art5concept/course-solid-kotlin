@@ -1,16 +1,7 @@
 fun main() {
-    var isActive = true
-    if (isActive == true) {
-    // sout para acortar el printline
-        println("the conditions is true")
-    } else {
-        println("the conditions is false")
-    }
-
-    isActive = false
-    if (isActive == true) {
-    //  sout para acortar el printline
-        println("the conditions is true")
+    val myNumber = 5
+    if (myNumber > 4) {
+        println("the conditions is greater than 4")
     } else {
         println("the conditions is false")
     }
