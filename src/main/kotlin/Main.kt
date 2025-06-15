@@ -1,13 +1,15 @@
 fun main() {
+    // las dos formas de poner char
+    // explicita
+    val myCharValue: Char = 'D'
 
-    // si se quiere que sea float se debe usar asi
-    val myNumber = 3.5f
+    println("$myCharValue")
+    println(myCharValue)
 
-    // de forma default los decimales son double
+    // implicita
 
-    // hacer esto es redundante y si solo se pone
-    // val mySecondNumber = 2 sera un integer
-    val mySecondNumber: Double = 4.5
+    val myChar1Value = 'F'
 
-    println("myNumber = $myNumber and mySecondNumber = $mySecondNumber")
+    println("$myChar1Value")
+    println(myChar1Value)
 }
