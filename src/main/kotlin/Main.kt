@@ -1,13 +1,10 @@
 fun main() {
-    val isActive = true
+    val num1 = 5
+    val num2 = 4
 
-    val score = 80
-
-    val internetSpeed = 4000
-
-    if (isActive && score == 100 && internetSpeed == 5000){
-        println("you are at the next level")
+    if (num1 > 0 || num2 > 0){
+        println("The condition is true")
     } else {
-        println("Your are at the same level")
+        println("The condition is false")
     }
 }
