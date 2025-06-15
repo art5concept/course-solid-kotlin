@@ -1,12 +1,7 @@
 fun main() {
-    var userName = "Alex"
-    userName = "John"
-
-    var age = 22
-
-    age = 13
+    val name = "Alex"
+    val age = 23
 
 
-
-    println("Hello $userName your age is $age!")
+    println("Hello $name. Your age is $age")
 }
