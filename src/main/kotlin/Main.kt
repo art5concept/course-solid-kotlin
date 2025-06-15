@@ -10,5 +10,9 @@ fun main() {
 
     number = 9223372036854775807
 
-    println(number)
+    val byteMaxValue: Byte = Byte.MAX_VALUE
+    val byteMinValue: Byte = Byte.MIN_VALUE
+
+    println("Byte min value: $byteMinValue")
+    println("Byte max value: $byteMaxValue")
 }
