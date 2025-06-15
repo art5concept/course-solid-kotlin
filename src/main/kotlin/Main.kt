@@ -1,17 +1,12 @@
 fun main() {
-    // Como pasar parametros a la siguiente entrada de la funcion
-    sendMessage(
-        name = "Alexa"
-    )
+    println(sum(1, 2, 3, 4,1,2,3,4,1,2,3,4))
+
 }
 
-fun sendMessage(name: String = "User", message: String = sendText()) {
-    println("Name = $name and message = $message")
+fun sum(vararg numbers: Int): Int {
+    var result = 0
+    for (number in numbers){
+        result += number
+    }
+    return result
 }
-
-fun sendText(): String {
-    return "Some text"
-}
-
-// OUTPUT
-// Name = User and message = hola
