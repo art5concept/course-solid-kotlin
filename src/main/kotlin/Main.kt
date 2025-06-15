@@ -16,19 +16,21 @@ fun main() {
 
     println("0 result = $result")
 
-    result = result + 2
+
+    // ESTA ES UNA FORMA INTERESANTE DE HACERLO NO SE PARA QUE SIRVE
+    (result + 2).also { result = it }
     println("1 result = $result")
 
-    result = result - 2
+    result -= 2
     println("2 result = $result")
 
-    result = result * 2
+    result *= 2
     println("3 result = $result")
 
-    result = result / 2
+    result /= 2
     println("4 result = $result")
 
-    result = result % 2
+    result %= 2
     println("5 result = $result")
 
 
