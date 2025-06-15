@@ -1,24 +1,17 @@
 fun main() {
-    // Posfix y Prefix incrementation
-    var x = 0
+    var isActive = true
+    if (isActive == true) {
+    // sout para acortar el printline
+        println("the conditions is true")
+    } else {
+        println("the conditions is false")
+    }
 
-
-    // postfix
-    println("x++ = ${x++}")
-    // x++ = 0
-
-    // prefix
-    println("++x = ${++x}")
-    // ++x = 2
-
-
-    // postfix
-    println("x-- = ${x--}")
-    // x-- = 2
-
-    // prefix
-    println("--x = ${--x}")
-    // --x = 0
-
-
+    isActive = false
+    if (isActive == true) {
+    //  sout para acortar el printline
+        println("the conditions is true")
+    } else {
+        println("the conditions is false")
+    }
 }
