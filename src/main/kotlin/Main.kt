@@ -2,17 +2,22 @@ fun main() {
     // Null pointer exception
     var text: String? = null
 
-//    text = "no nulo, ultimo maestro airre"
-    val text2 = text ?: "The text is null and i print this."
+    text = "no nulo, ultimo maestro aire"
+    var text2 = ""
+
+    if (text != null) {
+        text2 = text
+    } else {
+        text2 = "This variable is null"
+    }
 
     println(text2)
 //    Explicacion
-//    si text es nulo se asigna "the text is null...
+//    si text es nulo se asigna "this variable is null...
 //    sino es nulo se asigna el valor de text a text2
 
 
-
     //OUTPUT
-    //The text is null and i print this.
+    //no nulo, ultimo maestro aire
 
 }
