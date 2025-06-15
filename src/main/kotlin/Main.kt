@@ -1,11 +1,15 @@
 fun main() {
-    val myNumber = 1
+    val isActive = true
 
-    if (myNumber >= 4) {
-        println("the conditions is greater than 4")
-    } else if (myNumber >= 3) {
-        println("the conditions chained 1")
+    if (isActive){
+        println("The user is active")
     } else {
-        println("the conditions chained 2")
+        println("The user is not active")
+    }
+
+    if (!isActive){
+        println("The user is active")
+    } else {
+        println("The user is not active")
     }
 }
