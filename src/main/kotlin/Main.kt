@@ -1,15 +1,7 @@
 fun main() {
-    // las dos formas de poner char
-    // explicita
-    val myCharValue: Char = 'D'
+    // las dos formas de poner char y boolean juntos
+    val myBooleanValue: Boolean = false
+    val myCharValue = 'B'
 
-    println("$myCharValue")
-    println(myCharValue)
-
-    // implicita
-
-    val myChar1Value = 'F'
-
-    println("$myChar1Value")
-    println(myChar1Value)
+    println("myCharValue = $myCharValue and myBoolean = $myBooleanValue")
 }
