@@ -1,7 +1,7 @@
 fun main() {
     // Operators
-    // haciendo calculos con integers
-    val x = 5
+    // haciendo calculos con double
+    val x = 5.0
     val y = 3
 
 
