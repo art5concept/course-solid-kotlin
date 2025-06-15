@@ -1,8 +1,11 @@
 fun main() {
-    val myNumber = 5
-    if (myNumber > 4) {
+    val myNumber = 1
+
+    if (myNumber >= 4) {
         println("the conditions is greater than 4")
+    } else if (myNumber >= 3) {
+        println("the conditions chained 1")
     } else {
-        println("the conditions is false")
+        println("the conditions chained 2")
     }
 }
