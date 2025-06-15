@@ -1,26 +1,19 @@
 fun main() {
-    // Functions
-    sayHello("felix",3)
-    sayHello("daniel",5)
-    sayHello("john",12)
-
-    val hasInternetConnection = false
-    if (hasInternetConnection){
-        getData("Some data")
-    } else {
-        showMessage()
-    }
+    val max = getMax(2, 4)
+    val min = getMin(2, 4)
+    println(max)
+    println(min)
 }
 
-fun sayHello(name: String, age: Int) {
-    // los parametros de la funcion son val constantes no pueden cambiar
-    println("Hello, $name! Your age is $age")
+fun getMax(a: Int, b: Int): Int {
+    val max = if (a > b) a else b
+    return max
 }
 
-fun getData(data: String) {
-    println("Your data is: $data")
+fun getMin(a: Int, b: Int): Int {
+    return if (a < b) a else b
 }
 
-fun showMessage() {
-    println("There's no internet connection")
-}
+// OUTPUT
+// 4
+// 2
