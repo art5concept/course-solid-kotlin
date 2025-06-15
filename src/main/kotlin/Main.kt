@@ -1,15 +1,13 @@
 fun main() {
     val isActive = true
 
-    if (isActive){
-        println("The user is active")
-    } else {
-        println("The user is not active")
-    }
+    val score = 80
 
-    if (!isActive){
-        println("The user is active")
+    val internetSpeed = 4000
+
+    if (isActive && score == 100 && internetSpeed == 5000){
+        println("you are at the next level")
     } else {
-        println("The user is not active")
+        println("Your are at the same level")
     }
 }
