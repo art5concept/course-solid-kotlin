@@ -1,8 +1,15 @@
 fun main() {
     // Null pointer exception
-    var text: String? = "name"
+    var text: String? = null
 
-    // usando only safe operator ?.
-    println(text?.length)
+    // usando operador non null asserted !!.
+    println(text!!.length)
+
+    //OUTPUT
+
+
+    //Exception in thread "main" java.lang.NullPointerException
+    //	at MainKt.main(Main.kt:7)
+    //	at MainKt.main(Main.kt)
 
 }
