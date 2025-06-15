@@ -1,10 +1,14 @@
 fun main() {
-    val num1 = -5
-    val num2 = -4
-//Esto daria error porque si es string y la condicion cae en el else el 5 no es string
-//    val text: String = if (num1 > 0 || num2 > 0) "The condition is true" else 5
-//    println("$text")
+    // Null pointer exception
+    // se debe poner un ? al tipo para que kotlin permita que una variable
+    // tenga dato null porque por defecto no se permite
+    var text: String? = "name"
+    text = null
+    if (text != null){
+        println("No es null, es $text")
+    } else {
+        println("Es null, $text")
+    }
 
-    val text2 = if (num1 > 0 || num2 > 0) "The condition is true" else 5
-    println("$text2")
+
 }
