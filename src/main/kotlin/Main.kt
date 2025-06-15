@@ -1,28 +1,23 @@
 fun main() {
-    val max = getMax(2, 4)
-    val min = getMin(2, 4)
-    val min2 = getMin2(2, 4)
-    println(max)
+// Functions Overloading es hacer funciones con el mismo nombre pero con distintos tipos o numero de parametros
+    val min = getMin(3, 4, 2)
     println(min)
-    println(min2)
 }
 
-fun getMax(a: Int, b: Int): Int {
-    val max = if (a > b) a else b
-    return max
+fun getMin(a: Int, b: Int) = if (a < b) a else b
+fun getMin(a: Int, b: Int, c: Int): Int {
+    if (a <= b && a <= c) {
+        return a
+    } else if (b <= a && b <= c) {
+        return b
+    } else {
+        return c
+    }
+
 }
 
-// forma consisa
-
-fun getMin(a: Int, b: Int): Int {
-    return if (a < b) a else b
-}
-
-// aun mas conciso si solo se tiene una linea de codigo en funciones asi
-
-fun getMin2(a: Int, b: Int) = if (a < b) a else b
+fun getMin(a: Double, b: Double) = if (a < b) a else b
 
 
 // OUTPUT
-// 4
 // 2
