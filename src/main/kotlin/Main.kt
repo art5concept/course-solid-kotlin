@@ -1,7 +1,10 @@
 fun main() {
-    // las dos formas de poner char y boolean juntos
-    val myBooleanValue: Boolean = false
-    val myCharValue = 'B'
+    // Operators
 
-    println("myCharValue = $myCharValue and myBoolean = $myBooleanValue")
+    val x = 5
+    val y = 3
+
+    val result = x + y
+
+    println("result = $result")
 }
