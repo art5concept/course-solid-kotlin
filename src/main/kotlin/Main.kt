@@ -1,7 +1,10 @@
 fun main() {
-    val name = "Alex"
-    val age = 23
+    val number = 23
 
+    val integerMaxValue = Int.MAX_VALUE
 
-    println("Hello $name. Your age is $age")
+    val integerMinValue = Int.MIN_VALUE
+
+    println("Integer max value: $integerMaxValue")
+    println("Integer min value: $integerMinValue")
 }
