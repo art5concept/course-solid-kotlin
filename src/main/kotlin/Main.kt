@@ -5,7 +5,9 @@ fun main() {
 
     // de forma default los decimales son double
 
-    val mySecondNumber = 4.5
+    // hacer esto es redundante y si solo se pone
+    // val mySecondNumber = 2 sera un integer
+    val mySecondNumber: Double = 4.5
 
     println("myNumber = $myNumber and mySecondNumber = $mySecondNumber")
 }
