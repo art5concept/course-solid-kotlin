@@ -1,10 +1,14 @@
 fun main() {
-    val number = 23
+    var number: Long = 23
 
-    val integerMaxValue = Int.MAX_VALUE
+    val integerMaxValue = Long.MAX_VALUE
 
-    val integerMinValue = Int.MIN_VALUE
+    val integerMinValue = Long.MIN_VALUE
 
     println("Integer max value: $integerMaxValue")
     println("Integer min value: $integerMinValue")
+
+    number = 9223372036854775807
+
+    println(number)
 }
