@@ -1,23 +1,26 @@
 fun main() {
-    // Null pointer exception
-    var text: String? = null
+    // Functions
+    sayHello("felix",3)
+    sayHello("daniel",5)
+    sayHello("john",12)
 
-    text = "no nulo, ultimo maestro aire"
-    var text2 = ""
-
-    if (text != null) {
-        text2 = text
+    val hasInternetConnection = false
+    if (hasInternetConnection){
+        getData("Some data")
     } else {
-        text2 = "This variable is null"
+        showMessage()
     }
+}
 
-    println(text2)
-//    Explicacion
-//    si text es nulo se asigna "this variable is null...
-//    sino es nulo se asigna el valor de text a text2
+fun sayHello(name: String, age: Int) {
+    // los parametros de la funcion son val constantes no pueden cambiar
+    println("Hello, $name! Your age is $age")
+}
 
+fun getData(data: String) {
+    println("Your data is: $data")
+}
 
-    //OUTPUT
-    //no nulo, ultimo maestro aire
-
+fun showMessage() {
+    println("There's no internet connection")
 }
