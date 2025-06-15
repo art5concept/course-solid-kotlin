@@ -1,23 +1,11 @@
 fun main() {
-// Functions Overloading es hacer funciones con el mismo nombre pero con distintos tipos o numero de parametros
-    val min = getMin(3, 4, 2)
-    println(min)
+    // Como pasar parametros a la siguiente entrada de la funcion
+    sendMessage(message = "hola")
 }
 
-fun getMin(a: Int, b: Int) = if (a < b) a else b
-fun getMin(a: Int, b: Int, c: Int): Int {
-    if (a <= b && a <= c) {
-        return a
-    } else if (b <= a && b <= c) {
-        return b
-    } else {
-        return c
-    }
-
+fun sendMessage(name: String = "User", message: String = "") {
+    println("Name = $name and message = $message")
 }
-
-fun getMin(a: Double, b: Double) = if (a < b) a else b
-
 
 // OUTPUT
-// 2
+// Name = User and message = hola
