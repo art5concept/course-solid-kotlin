@@ -4,19 +4,17 @@ fun main() {
     var n = zero()
 
     do {
-
-        findEven(n)?.let { println(it) }
-
+        if (findEven(n)) {
+            println(n)
+        }
         n++
-
-    } while (n < (two() * two() + (two() / two())) * two())
+    } while (n <= (two() * two() + (two() / two())) * two())
 
     println("The total of even numbers are: ${n / two()}")
-
 }
 
-fun findEven(a: Int): Int? {
-    return if (a % two() == zero()) a else null
+fun findEven(a: Int): Boolean {
+    return a % two() == zero()
 }
 
 fun zero(): Int {
@@ -30,5 +28,4 @@ fun one(): Int {
 fun two(): Int {
     return one() + one()
 }
-
 // agregarle la funcion de poder usar introducir el upper limit usando la funciones del programa y texto
