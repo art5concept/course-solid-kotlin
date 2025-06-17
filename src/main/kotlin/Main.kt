@@ -1,3 +1,5 @@
+import kotlin.math.round
+
 fun main() {
     // FUN CHALLENGE
     // Find even numbers in consecutive way and count the total using only null and just one "0"
@@ -8,9 +10,9 @@ fun main() {
             println(n)
         }
         n++
-    } while (n <= (two() * two() + (two() / two())) * two())
+    } while (n < ((two()* two()+one())*two()))
 
-    println("The total of even numbers are: ${n / two()}")
+    println("The total of even numbers are: ${round((n / two().toDouble())).toInt()}")
 }
 
 fun findEven(a: Int): Boolean {
