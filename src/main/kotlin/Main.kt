@@ -1,33 +1,30 @@
-import kotlin.math.round
+fun main(){
+    // ARRAYS
 
-fun main() {
-    // FUN CHALLENGE
-    // Find even numbers in consecutive way and count the total using only null and just one "0"
-    var n = zero()
+    val names: Array<String> = arrayOf("John","Stephen","Megan")
 
-    do {
-        if (findEven(n)) {
-            println(n)
+    val names1 = arrayOf("John","Stephen","Megan")
+
+    names[2] = "Alex"
+    println("First element: ${names[0]}")
+    println("First element: ${names[1]}")
+    println("First element: ${names[2]}")
+
+
+    val mixedElements  = arrayOf(4,5,6,7,4,"Name 1", 'a')
+
+    println("The size of the array is: ${names.size}")
+
+    for (i in mixedElements) {
+        if (i is String) {
+            println(i)
         }
-        n++
-    } while (n < ((two()* two()+one())*two()))
 
-    println("The total of even numbers are: ${round((n / two().toDouble())).toInt()}")
-}
+    }
 
-fun findEven(a: Int): Boolean {
-    return a % two() == zero()
+    for ( nam in names1) {
+        print(nam)
+        print(",")
+    }
+    println("")
 }
-
-fun zero(): Int {
-    return 0
-}
-
-fun one(): Int {
-    return -zero().inv()
-}
-
-fun two(): Int {
-    return one() + one()
-}
-// agregarle la funcion de poder usar introducir el upper limit usando la funciones del programa y texto
